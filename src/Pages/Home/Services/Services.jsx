@@ -8,7 +8,7 @@ const Services = () => {
 
     useState(()=>{
 
-        fetch('http://localhost:5000/services')
+        fetch('https://car-doctor-server-tonutonmoy.vercel.app/services')
         .then(a=> a.json())
         .then(a=> setServices(a))
          

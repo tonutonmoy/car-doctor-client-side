@@ -15,7 +15,7 @@ const Bookings = () => {
     const [booking,setBooking]=useState([]);
 
 
-    const url=`http://localhost:5000/bookings?email=${ user?.email}`
+    const url=`https://car-doctor-server-tonutonmoy.vercel.app/bookings?email=${ user?.email}`
 
     useEffect(()=>{
 
@@ -48,7 +48,7 @@ const Bookings = () => {
        
 
 
-        fetch(`http://localhost:5000/bookings/${id}`,{
+        fetch(`https://car-doctor-server-tonutonmoy.vercel.app/bookings/${id}`,{
 
            method:"DELETE"
         })
@@ -101,7 +101,7 @@ const Bookings = () => {
 
       
 
-      fetch(`http://localhost:5000/bookings/${id}`,{
+      fetch(`https://car-doctor-server-tonutonmoy.vercel.app/bookings/${id}`,{
         method: 'PATCH',
         headers:{
           'content-type': 'application/json'
